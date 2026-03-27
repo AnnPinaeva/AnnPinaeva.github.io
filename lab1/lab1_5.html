@@ -7,17 +7,18 @@
         svg {
             border: 1px solid #ccc;
             margin: 20px 0;
+            border-radius: 5px;
         }
         .tab {
             cursor: pointer;
-            transition: fill 0.3s;
+            transition: opacity 0.3s;
         }
         .tab:hover {
-            fill: #45a049;
+            opacity: 0.8;
         }
         text {
             font-family: Arial, sans-serif;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: bold;
         }
     </style>
@@ -27,33 +28,33 @@
     <h1>Карта-изображение</h1>
     <p>Нажмите на разные закладки, чтобы перейти к выполненным заданиям:</p>
 
-    <!-- SVG изображение с 4 закладками -->
+    <!-- SVG изображение с 4 разноцветными закладками -->
     <svg width="500" height="60" viewBox="0 0 500 60">
-        <!-- Закладка 1 -->
-        <polygon points="0,0 80,0 85,15 80,30 0,30" fill="#4CAF50" stroke="#2e6b2e" stroke-width="1" class="tab" onclick="location.href='lab1_1.html'"/>
-        <text x="35" y="20" fill="white" pointer-events="none">Работа 1</text>
+        <!-- Закладка 1 - красная -->
+        <polygon points="0,0 80,0 85,15 80,30 0,30" fill="#E74C3C" stroke="#c0392b" stroke-width="1" class="tab" onclick="location.href='lab1_1.html'"/>
+        <text x="40" y="22" fill="white" text-anchor="middle" pointer-events="none">1</text>
         
-        <!-- Закладка 2 -->
-        <polygon points="100,0 180,0 185,15 180,30 100,30" fill="#5cb85c" stroke="#2e6b2e" stroke-width="1" class="tab" onclick="location.href='lab1_2.html'"/>
-        <text x="135" y="20" fill="white" pointer-events="none">Работа 2</text>
+        <!-- Закладка 2 - синяя -->
+        <polygon points="100,0 180,0 185,15 180,30 100,30" fill="#3498DB" stroke="#2980b9" stroke-width="1" class="tab" onclick="location.href='lab1_2.html'"/>
+        <text x="140" y="22" fill="white" text-anchor="middle" pointer-events="none">2</text>
         
-        <!-- Закладка 3 -->
-        <polygon points="200,0 280,0 285,15 280,30 200,30" fill="#6cbc6c" stroke="#2e6b2e" stroke-width="1" class="tab" onclick="location.href='lab1_4.html'"/>
-        <text x="235" y="20" fill="white" pointer-events="none">Работа 3</text>
+        <!-- Закладка 3 - зелёная -->
+        <polygon points="200,0 280,0 285,15 280,30 200,30" fill="#2ECC71" stroke="#27ae60" stroke-width="1" class="tab" onclick="location.href='lab1_4.html'"/>
+        <text x="240" y="22" fill="white" text-anchor="middle" pointer-events="none">3</text>
         
-        <!-- Закладка 4 -->
-        <polygon points="300,0 380,0 385,15 380,30 300,30" fill="#7ccc7c" stroke="#2e6b2e" stroke-width="1" class="tab" onclick="location.href='docs/doc.html'"/>
-        <text x="335" y="20" fill="white" pointer-events="none">Документы</text>
+        <!-- Закладка 4 - фиолетовая -->
+        <polygon points="300,0 380,0 385,15 380,30 300,30" fill="#9B59B6" stroke="#8e44ad" stroke-width="1" class="tab" onclick="location.href='docs/doc.html'"/>
+        <text x="340" y="22" fill="white" text-anchor="middle" pointer-events="none">4</text>
     </svg>
 
     <hr>
 
     <h2>Описание закладок:</h2>
     <ul>
-        <li><strong>Закладка 1</strong> (зелёная) — <code>lab1_1.html</code></li>
-        <li><strong>Закладка 2</strong> (светло-зелёная) — <code>lab1_2.html</code></li>
-        <li><strong>Закладка 3</strong> (зелёная) — <code>lab1_4.html</code></li>
-        <li><strong>Закладка 4</strong> (светло-зелёная) — <code>docs/doc.html</code></li>
+        <li><strong style="color:#E74C3C">🔴 Красная закладка 1</strong> — <code>lab1_1.html</code></li>
+        <li><strong style="color:#3498DB">🔵 Синяя закладка 2</strong> — <code>lab1_2.html</code></li>
+        <li><strong style="color:#2ECC71">🟢 Зелёная закладка 3</strong> — <code>lab1_4.html</code></li>
+        <li><strong style="color:#9B59B6">🟣 Фиолетовая закладка 4</strong> — <code>docs/doc.html</code></li>
     </ul>
 
     <p><a href="index.html">Вернуться на главную</a></p>
