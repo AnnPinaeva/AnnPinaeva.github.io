@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Таблицы</title>
+    <title>Четыре таблицы</title>
     <style>
         table {
             border-collapse: collapse;
@@ -14,7 +14,8 @@
             text-align: center;
         }
         th {
-            background-color: #f0f0f0;
+            background-color: #ffd6e7; /* нежно-розовый цвет */
+            font-weight: bold;
         }
         caption {
             margin-bottom: 8px;
@@ -26,7 +27,7 @@
 
     <h1>Четыре таблицы</h1>
 
-    <!-- Только первая таблица -->
+    <!-- Таблица 1 -->
     <table>
         <caption>Таблица 1</caption>
         <tr>
@@ -36,6 +37,47 @@
         <tr>
             <td>5</td>
             <td>6</td>
+        </tr>
+    </table>
+
+    <!-- Таблица 2 -->
+    <table>
+        <caption>Таблица 2</caption>
+        <tr>
+            <th rowspan="3">1</th>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <!-- Таблица 3 -->
+    <table>
+        <caption>Таблица 3</caption>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+        </tr>
+    </table>
+
+    <!-- Таблица 4 -->
+    <table>
+        <caption>Таблица 4</caption>
+        <tr>
+            <th rowspan="3">1</th>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
         </tr>
     </table>
 
