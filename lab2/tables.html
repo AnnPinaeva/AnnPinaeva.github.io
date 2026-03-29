@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <title>Четыре таблицы</title>
     <style>
+        body {
+            background-color: #fff;
+        }
         table {
             border-collapse: collapse;
             margin: 20px;
+            border: 1px solid #ddd;
         }
         td, th {
-            border: 1px solid black;
-            padding: 30px 40px;
+            border: 1px solid #eee;
+            padding: 20px;
             text-align: center;
         }
         th {
-            background-color: #ffd6e7; /* нежно-розовый цвет */
+            background-color: #ffe6f0;
             font-weight: bold;
         }
         caption {
             margin-bottom: 8px;
             font-weight: bold;
+            color: #333;
         }
     </style>
 </head>
@@ -27,7 +32,6 @@
 
     <h1>Четыре таблицы</h1>
 
-    <!-- Таблица 1 -->
     <table>
         <caption>Таблица 1</caption>
         <tr>
@@ -40,11 +44,13 @@
         </tr>
     </table>
 
-    <!-- Таблица 2 -->
     <table>
         <caption>Таблица 2</caption>
         <tr>
-            <th rowspan="3">1</th>
+            <th colspan="2" rowspan="2">1</th>
+        </tr>
+        <tr></tr>
+        <tr>
             <td rowspan="2">3</td>
             <td>4</td>
         </tr>
@@ -53,7 +59,6 @@
         </tr>
     </table>
 
-    <!-- Таблица 3 -->
     <table>
         <caption>Таблица 3</caption>
         <tr>
@@ -68,7 +73,6 @@
         </tr>
     </table>
 
-    <!-- Таблица 4 -->
     <table>
         <caption>Таблица 4</caption>
         <tr>
@@ -78,6 +82,10 @@
         </tr>
         <tr>
             <td colspan="2">5</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
         </tr>
     </table>
 
