@@ -2,95 +2,84 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таблицы</title>
     <style>
         table {
-            width: 300px;
-            border: 3px solid black;
-            margin: 20px;
-            float: left;
-            border-collapse: collapse;
+            border-collapse: collapse;  
+            margin: 20px;              
+            float: left;              
         }
         td, th {
-            border: 3px solid black;
-            padding: 30px;
-            font-weight: bold;
+            border: 1px solid black;   
+            padding: 30px 40px;        
+            text-align: center;        
+        }
+        th {
+            background-color: #FFCDCD;  
         }
         caption {
-            font-size: 16px;
-            margin-bottom: 10px;
-            font-weight: bold;
+            margin-bottom: 8px;        
+            font-weight: bold;          
         }
     </style>
 </head>
 <body>
+
+    <h1>Четыре таблицы</h1>
+
+    <!-- Таблица 1 -->
     <table>
-        <caption>1 таблица</caption>
-        <tbody>
-            <tr>
-                <th>1</th>
-                <td>2</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <th>4</th>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-        </tbody>
+        <caption>Таблица 1</caption>
+        <tr>
+            <th rowspan="2">1</th>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
     </table>
 
+    <!-- Таблица 2 -->
     <table>
-        <caption>2 таблица</caption>
-        <tbody>
-            <tr>
-                <th>1</th>
-                <th>2</th>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>6</td>
-            </tr>
-        </tbody>
+        <caption>Таблица 2</caption>
+        <tr>
+            <th rowspan="3">1</th>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>6</td>
+        </tr>
     </table>
 
+    <!-- Таблица 3 -->
     <table>
-        <caption>3 таблица</caption>
-        <tbody>
-            <tr>
-                <th>1</th>
-                <td>2</td>
-            </tr>
-            <tr>
-                <th>3</th>
-                <td>4</td>
-            </tr>
-            <tr>
-                <th>5</th>
-                <td>6</td>
-            </tr>
-        </tbody>
+        <caption>Таблица 3</caption>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+        </tr>
     </table>
 
+    <!-- Таблица 4 -->
     <table>
-        <caption>4 таблица</caption>
-        <tbody>
-            <tr>
-                <td colspan="2" style="background-color: pink;">1</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td colspan="2">5</td>
-            </tr>
-        </tbody>
+        <caption>Таблица 4</caption>
+        <tr>
+            <th rowspan="3">1</th>
+            <td>3</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td colspan="2">5</td>
+         </tr>
     </table>
+
 </body>
 </html>
