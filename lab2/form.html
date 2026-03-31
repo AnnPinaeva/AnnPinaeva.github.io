@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            border: none;
+            margin: 15px 0;
+            padding: 0;
+        }
+        label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group label,
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Форма регистрации пользователя</h1>
+
+    <form method="post">
+        <!-- E-mail (обязательное, с валидацией) -->
+        <label for="email">E-mail:
+            <input type="email" id="email" name="email" required placeholder="Введите e-mail">
+        </label>
+
+        <!-- Пароль (обязательное) -->
+        <label for="password">Пароль:
+            <input type="password" id="password" name="password" required placeholder="Введите пароль">
+        </label>
+
+        <!-- Пол (радиокнопки) -->
+        <fieldset>
+            <legend>Пол</legend>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="gender" value="male"> Мужчина
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Женщина
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Год рождения (выпадающий список) -->
+        <label for="birth-year">Год рождения:
+            <select id="birth-year" name="birth-year">
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+            </select>
+        </label>
+
+        <!-- Я знаю (чекбоксы) -->
+        <fieldset>
+            <legend>Я знаю</legend>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="lang" value="russian" checked disabled> Русский
+                </label>
+                <label>
+                    <input type="checkbox" name="lang" value="spanish"> Испанский
+                </label>
+                <label>
+                    <input type="checkbox" name="lang" value="german"> Немецкий
+                </label>
+                <label>
+                    <input type="checkbox" name="lang" value="english"> Английский
+                </label>
+                <label>
+                    <input type="checkbox" name="lang" value="chinese"> Китайский
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Обо мне (текстовое поле) -->
+        <label for="about">Обо мне:
+            <textarea id="about" name="about" rows="4" placeholder="Напишите коротко о себе"></textarea>
+        </label>
+
+        <!-- Кнопки -->
+        <button type="submit">Готово</button>
+        <button type="reset">Очистить</button>
+    </form>
+
+</body>
+</html>
